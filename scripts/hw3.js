@@ -12,6 +12,7 @@ var charNum  = document.getElementById('charnum');
 
 Button.addEventListener('click', function(){
     var input = prompt('Enter Password Length, 8-15 Chars');
+    Display.value = '';
     if (input != null && input>=8 && input<=15){
         charNum.value = input;
         length = input;
@@ -64,6 +65,9 @@ Button.addEventListener('click', function(){
     
     }  
     Display.value = pass;
+    
+    
     alert(bank);
+    
 });
 
